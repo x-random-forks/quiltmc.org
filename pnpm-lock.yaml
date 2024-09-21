@@ -36,12 +36,12 @@ importers:
       astro-icon:
         specifier: ^1.1.1
         version: 1.1.1
-      semver-sort:
-        specifier: ^1.0.0
-        version: 1.0.0
-      xml-js:
-        specifier: ^1.6.11
-        version: 1.6.11
+      fast-xml-parser:
+        specifier: ^4.5.0
+        version: 4.5.0
+      semver:
+        specifier: ^7.6.3
+        version: 7.6.3
     devDependencies:
       '@astrojs/mdx':
         specifier: ^3.1.5
@@ -67,6 +67,9 @@ importers:
       '@types/prismjs':
         specifier: ^1.26.4
         version: 1.26.4
+      '@types/semver':
+        specifier: ^7.5.8
+        version: 7.5.8
       '@types/semver-compare':
         specifier: ^1.0.3
         version: 1.0.3
@@ -1246,6 +1249,9 @@ packages:
   '@types/semver-sort@0.0.5':
     resolution: {integrity: sha512-cIQG7kjdzHcsRrYYkP8N65BogntqItjMjG8uSgPEl1ej4dKj9QC8snCFJb3HHF/Cwqe0s0IflJjUU5wb1yrLDQ==}
 
+  '@types/semver@7.5.8':
+    resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
+
   '@types/swagger-ui@3.52.4':
     resolution: {integrity: sha512-7NV7q8BfupqdQxr26OkM0g0YEPB9uXnKGzXadgcearvI9MoCHt3F72lPTX3fZZIlrr21DC0IK26wcDMZ37oFDA==}
 
@@ -2009,8 +2015,8 @@ packages:
   fast-json-patch@3.1.1:
     resolution: {integrity: sha512-vf6IHUX2SBcA+5/+4883dsIjpBTqmfBjmYiWK1savxQmFk4JfBMLa7ynTYOs1Rolp/T1betJxHiGD3g1Mn8lUQ==}
 
-  fast-xml-parser@4.4.1:
-    resolution: {integrity: sha512-xkjOecfnKGkSsOwtZ5Pz7Us/T6mrbPQrq0nh+aCO5V9nk5NLWmasAHumTKjiPJPWANe+kAZ84Jc8ooJkzZ88Sw==}
+  fast-xml-parser@4.5.0:
+    resolution: {integrity: sha512-/PlTQCI96+fZMAOLMZK4CWG1ItCbfZ/0jx7UIJFChPNrx7tcEgerUgWbeieCM9MfHInUDyK8DWYZ+YrywDJuTg==}
     hasBin: true
 
   fastq@1.17.1:
@@ -3456,18 +3462,6 @@ packages:
   semver-compare@1.0.0:
     resolution: {integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==}
 
-  semver-regex@3.1.4:
-    resolution: {integrity: sha512-6IiqeZNgq01qGf0TId0t3NvKzSvUsjcpdEO3AQNeIjR6A2+ckTnQlDpl4qu1bjRv0RzN3FP9hzFmws3lKqRWkA==}
-    engines: {node: '>=8'}
-
-  semver-sort@1.0.0:
-    resolution: {integrity: sha512-JicVlQKz/C//4BiPmbHEDou6HihXxo5xqB/8Hm9FaLJ6HHkRRvYgCECq4u/z0XF8kyJQ/KAZt++A/kYz/oOSSg==}
-    engines: {node: '>=0.10.0'}
-
-  semver@5.7.2:
-    resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
-    hasBin: true
-
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
@@ -3984,10 +3978,6 @@ packages:
   xml-but-prettier@1.0.1:
     resolution: {integrity: sha512-C2CJaadHrZTqESlH03WOyw0oZTtoy2uEg6dSDF6YRg+9GnYNub53RRemLpnvtbHDFelxMx4LajiFsYeR6XJHgQ==}
 
-  xml-js@1.6.11:
-    resolution: {integrity: sha512-7rVi2KMfwfWFl+GpPg6m80IVMWXLRjO+PxTq7V2CDhoGak0wzYzFgUY2m4XJ47OGdXd8eLE8EmwfAmdjw7lC1g==}
-    hasBin: true
-
   xml-name-validator@5.0.0:
     resolution: {integrity: sha512-EvGK8EJ3DhaHfbRlETOWAS5pO9MZITeauHKJyb8wyajUfQUenkIg2MvLDTZ4T/TgIcm3HU0TFBgWWboAZ30UHg==}
     engines: {node: '>=18'}
@@ -4134,7 +4124,7 @@ snapshots:
 
   '@astrojs/rss@4.0.7':
     dependencies:
-      fast-xml-parser: 4.4.1
+      fast-xml-parser: 4.5.0
       kleur: 4.1.5
 
   '@astrojs/sitemap@3.1.6':
@@ -5309,6 +5299,8 @@ snapshots:
 
   '@types/semver-sort@0.0.5': {}
 
+  '@types/semver@7.5.8': {}
+
   '@types/swagger-ui@3.52.4': {}
 
   '@types/tar@6.1.13':
@@ -6240,7 +6232,7 @@ snapshots:
 
   fast-json-patch@3.1.1: {}
 
-  fast-xml-parser@4.4.1:
+  fast-xml-parser@4.5.0:
     dependencies:
       strnum: 1.0.5
 
@@ -8114,15 +8106,6 @@ snapshots:
 
   semver-compare@1.0.0: {}
 
-  semver-regex@3.1.4: {}
-
-  semver-sort@1.0.0:
-    dependencies:
-      semver: 5.7.2
-      semver-regex: 3.1.4
-
-  semver@5.7.2: {}
-
   semver@6.3.1: {}
 
   semver@7.6.3: {}
@@ -8770,10 +8753,6 @@ snapshots:
   xml-but-prettier@1.0.1:
     dependencies:
       repeat-string: 1.6.1
-
-  xml-js@1.6.11:
-    dependencies:
-      sax: 1.4.1
 
   xml-name-validator@5.0.0: {}
 

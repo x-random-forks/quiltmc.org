@@ -18,6 +18,7 @@
 		"@types/lunr": "^2.3.7",
 		"@types/luxon": "^3.4.2",
 		"@types/prismjs": "^1.26.4",
+		"@types/semver": "^7.5.8",
 		"@types/semver-compare": "^1.0.3",
 		"@types/semver-sort": "^0.0.5",
 		"@types/swagger-ui": "^3.52.4",
@@ -55,8 +56,8 @@
 		"@tsndr/cloudflare-worker-jwt": "^2.5.3",
 		"astro-compress": "^2.3.1",
 		"astro-icon": "^1.1.1",
-		"semver-sort": "^1.0.0",
-		"xml-js": "^1.6.11"
+		"fast-xml-parser": "^4.5.0",
+		"semver": "^7.6.3"
 	},
 	"pnpm": {
 		"overrides": {
